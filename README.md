@@ -274,7 +274,7 @@ cfpb-customer-experience-nlp/
 │   ├── business_priority_matrix.png
 │   └── executive_summary.png
 │
-└── data/
+└── data_customer_analysis/
     └── README.md
 ```
 
