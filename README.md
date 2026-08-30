@@ -276,6 +276,8 @@ cfpb-customer-experience-nlp/
 │
 └── data/
     └── README.md
+```
+
 ## Reproducibility
 
 The analysis can be reproduced using the notebook and the documented dataset setup.
@@ -285,3 +287,50 @@ The analysis can be reproduced using the notebook and the documented dataset set
 ```bash
 git clone https://github.com/indiraroy/Customer-Experience-Analysis.git
 cd Customer-Experience-Analysis
+pip install -r requirements.txt
+```
+### 2. Install dependencies
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+3. Obtain the dataset
+
+Download the CFPB Consumer Complaint Database and place the CSV file in the local data/ directory.
+
+The raw dataset is not included in this repository.
+
+See data/README.md for dataset information and setup instructions.
+
+4. Run the analysis
+
+Open the Jupyter notebook:
+
+notebooks/CFPB_Customer_Experience_Analysis.ipynb
+
+Run the notebook from beginning to end.
+
+5. Analysis Pipeline
+
+The notebook performs the following steps:
+
+Load and inspect CFPB complaint data
+Clean and preprocess complaint narratives
+Convert narratives into TF-IDF features
+Apply Non-Negative Matrix Factorization (NMF) for topic modeling
+Identify six customer-experience themes
+Assign each complaint to its dominant theme
+Calculate topic assignment confidence and topic proportions
+Construct a CX Theme × CFPB Issue contingency table
+Conduct a chi-square test of independence
+Calculate Cramér's V to measure association strength
+Analyze standardized Pearson residuals to identify unusually strong CX Theme × CFPB Issue relationships
+Develop a business-priority matrix using complaint volume and association strength
+Generate visualizations and an executive summary
+Reproducibility Notes
+The NMF model uses a fixed random_state to support reproducible topic modeling results.
+Raw CSV files are excluded from version control through .gitignore.
+Dataset setup instructions are documented in data/README.md.
+Generated visual outputs are stored in the outputs/ directory.
