@@ -17,4 +17,4 @@ After downloading the dataset, place the CSV file in this `data/` directory.
 The notebook expects the dataset at:
 
 ```text
-data/complaints-2026-08-27_02-24.csv
+data_customer_analysis/complaints-2026-08-27_02-24.csv
