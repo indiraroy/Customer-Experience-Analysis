@@ -296,13 +296,13 @@ Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
-3. Obtain the dataset
+### 3. Obtain the dataset
 
-Download the CFPB Consumer Complaint Database and place the CSV file in the local data/ directory.
+Download the CFPB Consumer Complaint Database and place the CSV file in the local `data_customer_analysis/` directory.
 
 The raw dataset is not included in this repository.
 
-See data/README.md for dataset information and setup instructions.
+See `data_customer_analysis/README.md` for dataset information and setup instructions.
 
 4. Run the analysis
 
