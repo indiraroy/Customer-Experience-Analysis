@@ -12,7 +12,7 @@ https://www.consumerfinance.gov/data-research/consumer-complaints/
 
 ## Setup
 
-After downloading the dataset, place the CSV file in this `data/` directory.
+After downloading the dataset, place the CSV file in this `data_customer-analysis/` directory.
 
 The notebook expects the dataset at:
 
