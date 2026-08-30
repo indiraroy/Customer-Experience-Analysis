@@ -1,5 +1,5 @@
 # Raw datasets
-data/*.csv
+data_customer_analysis/*.csv
 
 # Python
 __pycache__/
